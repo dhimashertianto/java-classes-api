@@ -25,10 +25,10 @@ public class ClassController {
         ClassEntity classEntity = service.findById(id);
         return new ApiResponse<>(200, "Success", classEntity);
     }
-    // @PostMapping
-    // public ClassEntity create(@RequestBody ClassEntity classEntity) {
-    //     return service.save(classEntity);
-    // }
+    @PostMapping
+    public ClassEntity create(@RequestBody ClassEntity classEntity) {
+        return service.save(classEntity);
+    }
 
     @PutMapping("/{id}")
     public ClassEntity update(@PathVariable Long id, @RequestBody ClassEntity newClass) {
