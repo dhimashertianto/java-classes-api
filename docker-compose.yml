@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  my-spring-app:
+    image: dheimas/my-spring-app:latest
+    container_name: my-spring-app
+    ports:
+      - "55002:8080"
+    restart: unless-stopped
