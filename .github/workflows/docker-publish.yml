@@ -31,5 +31,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: your-username/your-image-name:latest
+          tags: dheimas/my-spring-app:latest
 
